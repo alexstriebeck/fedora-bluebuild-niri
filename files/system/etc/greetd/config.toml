@@ -1,0 +1,9 @@
+# Create greetd config
+# Fedora uses greetd as default user, not greeter
+
+[terminal]
+vt = 1
+
+[default_session]
+user = "greetd"
+command = "/usr/bin/dms-greeter --command niri"
