@@ -15,22 +15,24 @@ modules:
       files:
         - https://repository.mullvad.net/rpm/stable/mullvad.repo
       copr:
-        - avengemedia/dms
-        - avengemedia/danklinux
-        - quadratech188/vicinae
+        - avengemedia/dms # dankmaterialshell
+        - avengemedia/danklinux # dsearch, etc.
+        - quadratech188/vicinae # quick launcher
+        - scottames/ghostty # terminal emulator
+        - lihaohong/yazi # file manager
     install:
       install-weak-deps: false
       packages:
         - repo: mullvad-stable
           packages:
             - mullvad-vpn
-        - alacritty
         - brightnessctl
         - cava
         - dms
         - dms-greeter
         - dgop
         - dsearch
+        - ghostty
         - gnome-keyring
         - gnome-keyring-pam
         - greetd
@@ -51,6 +53,7 @@ modules:
         - vicinae
         - virt-install
         - xwayland-satellite
+        - yazi
         - zsh
     remove:
       packages:
