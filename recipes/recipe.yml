@@ -2,22 +2,18 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 # image will be published to ghcr.io/<user>/<name>
 name: fedora-bluebuild-niri
-description: A modified Fedora Kinoite using niri, a scrollable tiling Wayland compositor, instead of KDE.
+description: A modified ublue-os using niri, a scrollable tiling Wayland compositor.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: quay.io/fedora/fedora-kinoite
+base-image: ghcr.io/ublue-os/base-main
 image-version: 43 # latest is also supported if you want new updates ASAP
 
 modules:
   - type: dnf
-    remove:
-      packages:
-        - firefox
-        - firefox-langpacks
-        - kde-*
-        - plasma-workspace
-        - plasma-*
     repos:
+      cleanup: true
+      files:
+        - https://repository.mullvad.net/rpm/stable/mullvad.repo
       copr:
         - avengemedia/dms
         - avengemedia/danklinux
@@ -25,6 +21,9 @@ modules:
     install:
       install-weak-deps: false
       packages:
+        - repo: mullvad-stable
+          packages:
+            - mullvad-vpn
         - alacritty
         - brightnessctl
         - cava
@@ -44,13 +43,21 @@ modules:
         - khal
         - mako
         - matugen
+        - mullvad-vpn
         - niri
         - qemu-kvm
+        - tuned
+        - tuned-ppd
         - vicinae
         - virt-install
         - xwayland-satellite
         - zsh
-
+    remove:
+      packages:
+        - firefox
+        - firefox-langpacks
+        - htop
+        - nvtop
   - type: files
     files:
       - source: system
@@ -68,6 +75,8 @@ modules:
     user:
       enabled:
         - dsearch.service
+        #- mullvad-daemon
+        #- mullvad-early-boot-blocking
 
   # module 'systemd' does not yet support `set-default`
   - type: script
