@@ -52,7 +52,6 @@ modules:
         - vicinae
         - virt-install
         - xwayland-satellite
-        - yazi
         - zsh
     remove:
       packages:
