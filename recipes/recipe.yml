@@ -18,21 +18,19 @@ modules:
         - avengemedia/dms # dankmaterialshell
         - avengemedia/danklinux # dsearch, etc.
         - quadratech188/vicinae # quick launcher
-        - scottames/ghostty # terminal emulator
-        - lihaohong/yazi # file manager
     install:
       install-weak-deps: false
       packages:
         - repo: mullvad-stable
           packages:
             - mullvad-vpn
+        - alacritty
         - brightnessctl
         - cava
         - dms
         - dms-greeter
         - dgop
         - dsearch
-        - ghostty
         - gnome-keyring
         - gnome-keyring-pam
         - greetd
@@ -46,6 +44,7 @@ modules:
         - mako
         - matugen
         - mullvad-vpn
+        - nemo
         - niri
         - qemu-kvm
         - tuned
