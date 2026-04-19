@@ -15,46 +15,50 @@ modules:
       files:
         - https://repository.mullvad.net/rpm/stable/mullvad.repo
       copr:
-        - avengemedia/dms # dankmaterialshell
-        - avengemedia/danklinux # dsearch, etc.
+        - avengemedia/dms # cava, dankmaterialshell, dgop
+        - avengemedia/danklinux # dms-greeter, dgop, danksearch/dsearch, ghostty, matugen
+        - lihaohong/yazi # file manager
         - quadratech188/vicinae # quick launcher
     install:
       install-weak-deps: false
       packages:
-        - repo: mullvad-stable
+        - repo: mullvad-stable              # Mullvad repository
           packages:
             - mullvad-vpn
-        - alacritty
-        - brightnessctl
-        - cava
-        - dms
-        - dms-greeter
-        - dgop
-        - dsearch
-        - gnome-keyring
-        - gnome-keyring-pam
-        - greetd
-        - greetd-selinux
-        - libvirt
-        - libvirt-daemon-config-network
-        - libvirt-daemon-kvm
-        - kdeconnectd
-        - kf6-kimageformats
-        - khal
-        - mako
-        - matugen
-        - mullvad-vpn
-        - nemo
-        - niri
-        - qemu-kvm
-        - tuned
-        - tuned-ppd
-        - vicinae
-        - virt-install
-        - xwayland-satellite
-        - zsh
+        - alacritty                         # Terminal emulator
+        # - brightnessctl                   # Brightness control for built-in screens
+        # - cava                            # Audio visualiser
+        - dms                               # DarkMaterialShell
+        - dms-greeter                       # Skin for greeter login manager
+        - dgop                              # CPU/GPU monitor
+        - dsearch                           # Filesystem search
+        - ghostty                           # Terminal emulator
+        - gnome-keyring                     # Password manager
+        - gnome-keyring-pam                 # Password manager
+        - greetd                            # Login manager
+        - greetd-selinux                    # Login manager policy
+        - libvirt                           # Virtualisation
+        - libvirt-daemon-config-network     # Virtualisation
+        - libvirt-daemon-kvm                # Virtualisation
+        - kdeconnectd                       # Share files with mobile phones
+        - kf6-kimageformats                 # Support more image formats
+        # - khal                            # CalDAV integration
+        - mako                              # Notifications
+        - matugen                           # Material Design colour generator
+        - mullvad-vpn                       # Mullvad VPN
+        - nemo                              # GUI file manager
+        - niri                              # Scrollable-tiling Wayland compositor
+        - qemu-kvm                          # Virtualisation
+        - tuned                             # Performance balancer
+        - tuned-ppd                         # Performance balancer
+        - vicinae                           # Quick launcher
+        - virt-install                      # Virtualisation
+        - xwayland-satellite                # XWayland integration
+        - yazi                              # TUI file manager
+        - zsh                               # Z shell
     remove:
       packages:
+        - distrobox
         - firefox
         - firefox-langpacks
         - htop
