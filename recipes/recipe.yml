@@ -15,14 +15,14 @@ modules:
       files:
         - https://repository.mullvad.net/rpm/stable/mullvad.repo
       copr:
-        - avengemedia/dms # cava, dankmaterialshell, dgop
-        - avengemedia/danklinux # dms-greeter, dgop, danksearch/dsearch, ghostty, matugen
-        - lihaohong/yazi # file manager
-        - quadratech188/vicinae # quick launcher
+        - avengemedia/dms                   # repo for: cava, dankmaterialshell, dgop
+        - avengemedia/danklinux             # repo for: dms-greeter, dgop, danksearch/dsearch, ghostty, matugen
+        - lihaohong/yazi                    # repo for: yazi
+        - quadratech188/vicinae             # repo for: vicinae
     install:
       install-weak-deps: false
       packages:
-        - repo: mullvad-stable              # Mullvad repository
+        - repo: mullvad-stable              # repo for: mullvad-vpn
           packages:
             - mullvad-vpn
         - alacritty                         # Terminal emulator
@@ -32,7 +32,7 @@ modules:
         - dms-greeter                       # Skin for greeter login manager
         - dgop                              # CPU/GPU monitor
         - dsearch                           # Filesystem search
-        - ghostty                           # Terminal emulator
+        # - ghostty                           # Terminal emulator
         - gnome-keyring                     # Password manager
         - gnome-keyring-pam                 # Password manager
         - greetd                            # Login manager
@@ -42,6 +42,7 @@ modules:
         - libvirt-daemon-kvm                # Virtualisation
         - kdeconnectd                       # Share files with mobile phones
         - kf6-kimageformats                 # Support more image formats
+        - kitty                             # Terminal emulator
         # - khal                            # CalDAV integration
         - mako                              # Notifications
         - matugen                           # Material Design colour generator
