@@ -15,8 +15,8 @@ modules:
       files:
         - https://repository.mullvad.net/rpm/stable/mullvad.repo
       copr:
-        - avengemedia/dms                   # repo for: cava, dankmaterialshell, dgop
-        - avengemedia/danklinux             # repo for: dms-greeter, dgop, danksearch/dsearch, ghostty, matugen
+        - avengemedia/dms                   # repo for: dms
+        - avengemedia/danklinux             # repo for: dms-greeter, dgop, danksearch, matugen
         - lihaohong/yazi                    # repo for: yazi
         - quadratech188/vicinae             # repo for: vicinae
     install:
