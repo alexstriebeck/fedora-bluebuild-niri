@@ -25,37 +25,36 @@ modules:
         - repo: mullvad-stable              # repo for: mullvad-vpn
           packages:
             - mullvad-vpn
-        - alacritty                         # Terminal emulator
-        # - brightnessctl                   # Brightness control for built-in screens
-        # - cava                            # Audio visualiser
         - dms                               # DarkMaterialShell
         - dms-greeter                       # Skin for greeter login manager
         - dgop                              # CPU/GPU monitor
         - dsearch                           # Filesystem search
-        # - ghostty                           # Terminal emulator
         - gnome-keyring                     # Password manager
         - gnome-keyring-pam                 # Password manager
         - greetd                            # Login manager
         - greetd-selinux                    # Login manager policy
-        - libvirt                           # Virtualisation
-        - libvirt-daemon-config-network     # Virtualisation
-        - libvirt-daemon-kvm                # Virtualisation
+        - hugo                              # Static site manager
         - kdeconnectd                       # Share files with mobile phones
         - kf6-kimageformats                 # Support more image formats
         - kitty                             # Terminal emulator
-        # - khal                            # CalDAV integration
+        - libvirt                           # Virtualisation
+        - libvirt-daemon-config-network     # Virtualisation
+        - libvirt-daemon-kvm                # Virtualisation
         - mako                              # Notifications
         - matugen                           # Material Design colour generator
         - mullvad-vpn                       # Mullvad VPN
         - nemo                              # GUI file manager
         - niri                              # Scrollable-tiling Wayland compositor
+        - pandoc                            # Universal document converter
         - qemu-kvm                          # Virtualisation
+        - restic                            # Backup
         - tuned                             # Performance balancer
         - tuned-ppd                         # Performance balancer
         - vicinae                           # Quick launcher
         - virt-install                      # Virtualisation
         - xwayland-satellite                # XWayland integration
         - yazi                              # TUI file manager
+        - yt-dlp                            # Audio/video downloader
         - zsh                               # Z shell
     remove:
       packages:
