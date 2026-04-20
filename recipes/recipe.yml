@@ -36,6 +36,7 @@ modules:
         - greetd-selinux                    # Login manager policy
         - hugo                              # Static site manager
         - kdeconnectd                       # Share files with mobile phones
+        - kitty                             # Terminal emulator
         - kf6-kimageformats                 # Support more image formats
         - libvirt                           # Virtualisation
         - libvirt-daemon-config-network     # Virtualisation
