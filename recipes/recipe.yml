@@ -29,6 +29,7 @@ modules:
         - dms-greeter                       # Skin for greeter login manager
         - dgop                              # CPU/GPU monitor
         - dsearch                           # Filesystem search
+        - foot                              # Terminal emulator
         - ghostty                           # Terminal emulator
         - gnome-keyring                     # Password manager
         - gnome-keyring-pam                 # Password manager
