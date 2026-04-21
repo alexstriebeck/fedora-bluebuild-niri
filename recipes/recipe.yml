@@ -29,7 +29,6 @@ modules:
         - dms-greeter                       # Skin for greeter login manager
         - dgop                              # CPU/GPU monitor
         - dsearch                           # Filesystem search
-        - foot                              # Terminal emulator
         - ghostty                           # Terminal emulator
         - gnome-keyring                     # Password manager
         - gnome-keyring-pam                 # Password manager
@@ -65,10 +64,17 @@ modules:
         - firefox-langpacks
         - htop
         - nvtop
+
   - type: files
     files:
       - source: system
         destination: /
+
+  - type: fonts
+    fonts:
+        nerd-fonts:
+            - JetBrainsMono
+            - IBMPlexMono
 
   # module 'systemd' does not yet support `add-wants`
   - type: script
