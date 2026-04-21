@@ -16,7 +16,7 @@ modules:
         - https://repository.mullvad.net/rpm/stable/mullvad.repo
       copr:
         - avengemedia/dms                   # repo for: dms
-        - avengemedia/danklinux             # repo for: dms-greeter, dgop, danksearch, ghostty, matugen
+        - avengemedia/danklinux             # repo for: dms-greeter, dgop, danksearch, matugen
         - lihaohong/yazi                    # repo for: yazi
         - quadratech188/vicinae             # repo for: vicinae
     install:
@@ -29,7 +29,6 @@ modules:
         - dms-greeter                       # Skin for greeter login manager
         - dgop                              # CPU/GPU monitor
         - dsearch                           # Filesystem search
-        - ghostty                           # Terminal emulator
         - gnome-keyring                     # Password manager
         - gnome-keyring-pam                 # Password manager
         - greetd                            # Login manager
@@ -73,7 +72,6 @@ modules:
   - type: fonts
     fonts:
         nerd-fonts:
-            - JetBrainsMono
             - IBMPlexMono
 
   # module 'systemd' does not yet support `add-wants`
