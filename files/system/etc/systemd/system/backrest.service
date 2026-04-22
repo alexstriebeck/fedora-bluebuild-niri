@@ -7,7 +7,7 @@ Wants=network-online.target
 Type=simple
 User=$(whoami)
 Group=$(whoami)
-ExecStart=/usr/local/bin/backrest
+ExecStart=/usr/bin/backrest
 Restart=on-failure
 Environment="BACKREST_PORT=127.0.0.1:9898"
 
