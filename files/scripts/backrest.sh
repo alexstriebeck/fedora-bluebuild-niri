@@ -9,4 +9,4 @@ cd /tmp
 mkdir backrest
 wget https://github.com/garethgeorge/backrest/releases/download/v1.12.1/backrest_Linux_x86_64.tar.gz
 tar -xzvf backrest_Linux_x86_64.tar.gz -C backrest
-sudo mv backrest /usr/bin/backrest
+mv backrest /usr/bin/backrest
