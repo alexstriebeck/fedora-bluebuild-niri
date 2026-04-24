@@ -25,6 +25,7 @@ modules:
         - repo: mullvad-stable              # repo for: mullvad-vpn
           packages:
             - mullvad-vpn
+        - alacritty                         # Terminal emulator
         - dms                               # DarkMaterialShell
         - dms-greeter                       # Skin for greeter login manager
         - dgop                              # CPU/GPU monitor
