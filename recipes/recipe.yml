@@ -25,11 +25,11 @@ modules:
         - repo: mullvad-stable              # repo for: mullvad-vpn
           packages:
             - mullvad-vpn
-        - alacritty                         # Terminal emulator
         - dms                               # DarkMaterialShell
         - dms-greeter                       # Skin for greeter login manager
         - dgop                              # CPU/GPU monitor
         - dsearch                           # Filesystem search
+        - firewall-config                   # Configure firewalld
         - ghostty                           # Terminal emulator
         - gnome-keyring                     # Password manager
         - gnome-keyring-pam                 # Password manager
@@ -37,7 +37,6 @@ modules:
         - greetd-selinux                    # Login manager policy
         - hugo                              # Static site manager
         - kdeconnectd                       # Share files with mobile phones
-        - kitty                             # Terminal emulator
         - kf6-kimageformats                 # Support more image formats
         - libvirt                           # Virtualisation
         - libvirt-daemon-config-network     # Virtualisation
